@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 95%;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px;
+  background: aqua;
+  border-radius: 10px;
+}
+
+main .container {
+  margin-block: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+main .container .game-area .inputs-container {
+  background: aqua;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container .game-area .inputs-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+main .container .game-area .inputs-container > div h4 {
+  color: gray;
+}
+main .container .game-area .inputs-container > div input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+main .container .game-area .inputs-container > div input.in-place {
+  background: green;
+}
+main .container .game-area .inputs-container > div input.not-place {
+  background: orange;
+}
+main .container .game-area .inputs-container > div input.no {
+  background: red;
+}
+main .container .game-area .control {
+  margin-top: 30px;
+}
+main .container .game-area .control button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container .info .gameMsg {
+  background: aqua;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+main .container .info .colors-key {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(143, 216, 149);
+  padding: 10px;
+  border-radius: 10px;
+}
+main .container .info .colors-key .key-color {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+main .container .info .colors-key .key-color .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+main .container .info .colors-key .key-color .in-place {
+  background: green;
+}
+main .container .info .colors-key .key-color .not-place {
+  background: orange;
+}
+main .container .info .colors-key .key-color .no {
+  background: red;
+}
+footer h5 {
+  text-align: center;
+  padding: 20px;
+  background: aqua;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

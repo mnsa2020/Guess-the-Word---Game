@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 95%;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+// .word {
+//   font-weight: bold;
+//   color: greenyellow;
+// }
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+header {
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background: aqua;
+    border-radius: 10px;
+  }
+}
+
+main {
+  .container {
+    margin-block: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    .game-area {
+      .inputs-container {
+        background: aqua;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          h4 {
+            color: gray;
+          }
+          input {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+            &.in-place {
+              background: green;
+            }
+            &.not-place {
+              background: orange;
+            }
+            &.no {
+              background: red;
+            }
+          }
+        }
+      }
+      .control {
+        margin-top: 30px;
+        button {
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .gameMsg {
+        background: aqua;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .colors-key {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: rgb(143, 216, 149);
+        padding: 10px;
+        border-radius: 10px;
+        .key-color {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: space-between;
+          .color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+          .in-place {
+            background: green;
+          }
+          .not-place {
+            background: orange;
+          }
+          .no {
+            background: red;
+          }
+          .key-text {
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  h5 {
+    text-align: center;
+    padding: 20px;
+    background: aqua;
+    border-radius: 10px;
+  }
+}
