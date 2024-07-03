@@ -33,7 +33,7 @@ const words = [
 let randomWord =
   words[Math.floor(Math.random() * words.length)].toLocaleLowerCase();
 // console.log(randomWord);
-gameMsg.innerHTML = `Guess The Word [${randomWord}]`;
+gameMsg.innerHTML = "Guess The Word [?}";
 
 // Generate Inputs
 function generateInputs() {
